@@ -8,7 +8,7 @@ let estadoLinterna = "apagado"
 
 //eventos
 
-
+batmanBoton.addEventListener("click", controlarLinterna)
 
 // funciones
 function controlarLinterna(){
@@ -31,5 +31,6 @@ function sonidoLinterna(){
         sonidoBatman.play();
     }else{
         sonidoBoton.play();
-        sonidoBatman.pause();    }
+        sonidoBatman.pause();
+        sonidoBatman.currentTime=0;    }
 }
